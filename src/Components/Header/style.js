@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import {
   textGradientColorPrimary,
   textGradientColorSecondary,
+  cardDark,
 } from '../UI/variables';
 
 export const Icon = styled.img`
@@ -48,7 +49,7 @@ export const CardHomeInfos = styled.div`
 display: flex;
 flex-direction: column;
 justify-content: space-between;
-`
+`;
 
 export const SocialMedias = styled.div`
 display: flex;
@@ -56,4 +57,30 @@ justify-content:space-around;
 align-items: center;
 width: 50%;
 margin-bottom: 2rem;
-`
+gap: 0.5rem;
+`;
+export const CardSocial = styled.div`
+  height: '300px';
+  width: '300px';
+  padding: 2rem;
+  background-color: ${cardDark};
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 35px;
+  font-style: italic;
+  color: white;
+  transform-style: preserve-3d;
+  transition: all 0.25s;
+  transform:translateZ(50%)
+  :hover{
+    background-color: ${(props) => props.backColorHouver};
+  }
+`;
+
+export const TitleSocialCard = styled.h5`
+  color: white;
+  background-color: transparent;
+`;
