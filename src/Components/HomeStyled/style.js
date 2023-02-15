@@ -14,4 +14,9 @@ export const CardsContainer = styled.div`
  overflow: scroll;
  margin: 2rem auto;
  width: 100%;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
+  display: none;
+}
 `;

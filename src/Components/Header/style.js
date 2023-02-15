@@ -21,7 +21,7 @@ justify-content: flex-start;
 gap: 1rem;
 width: 100%;
 height: 100vh;
-/* margin: 1rem 0; */
+margin: 4rem 0;
 `;
 
 export const TitleStyled = styled.h1`
