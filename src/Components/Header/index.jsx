@@ -11,7 +11,6 @@ import {
   TitleSocialCard,
   CardSocialParallex,
 } from './style';
-// import './styledCardSocial.sass';
 import './styleTiltcss.css'
 
 

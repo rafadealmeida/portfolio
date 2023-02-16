@@ -4,7 +4,6 @@ import {
   textGradientColorSecondary,
   cardDark,
 } from '../UI/variables';
-import GitHubIcon from '../../assets/github-outline.svg'
 
 export const IconStyled = styled.img`
   width: 25%;
@@ -65,7 +64,6 @@ export const CardSocial = styled.div`
   width: '100px';
   padding: 2rem;
   background-color: ${cardDark};
-  background-image: url(${GitHubIcon});
   border-radius: 10px;
   display: flex;
   flex-direction: column;
