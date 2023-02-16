@@ -4,8 +4,9 @@ import {
   textGradientColorSecondary,
   cardDark,
 } from '../UI/variables';
+import GitHubIcon from '../../assets/github-outline.svg'
 
-export const Icon = styled.img`
+export const IconStyled = styled.img`
   width: 25%;
   border-radius: 50%;
   margin-bottom: 1rem;
@@ -60,16 +61,17 @@ margin-bottom: 2rem;
 gap: 0.5rem;
 `;
 export const CardSocial = styled.div`
-  height: '300px';
-  width: '300px';
+  height: '100px';
+  width: '100px';
   padding: 2rem;
   background-color: ${cardDark};
+  background-image: url(${GitHubIcon});
   border-radius: 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-size: 35px;
+  font-size: ;
   font-style: italic;
   color: white;
   transform-style: preserve-3d;
@@ -83,4 +85,19 @@ export const CardSocial = styled.div`
 export const TitleSocialCard = styled.h5`
   color: white;
   background-color: transparent;
+`;
+
+export const CardSocialParallex = styled.a`
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+    font-style: italic;
+    color: white;
+    transform: translateZ(60px);
+    background-color: transparent;
+    :hover{
+    background-color: ${(props) => props.backColorHouver};
+  }
 `;

@@ -1,0 +1,29 @@
+.parallax-effect-glare-scale {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 25%;
+  padding: 2rem;
+  height: 80%;
+  background-color: #202022;
+  color: white;
+  border-radius: 20px;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+  transform-style: preserve-3d;
+}
+
+.parallax-effect-glare-scale:hover{
+  background-color: #3a3a3c;
+}
+
+.inner-element {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  transform: translateZ(60px);
+  padding: .5rem;
+  background-color: transparent;
+}
