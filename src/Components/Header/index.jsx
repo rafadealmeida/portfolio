@@ -11,8 +11,7 @@ import {
   TitleSocialCard,
   CardSocialParallex,
 } from './style';
-import './styleTiltcss.css'
-
+import './styleTiltcss.css';
 
 // eslint-disable-next-line arrow-body-style
 export const Header = () => {
@@ -22,10 +21,12 @@ export const Header = () => {
         <IconStyled src={Perfil} alt="Foto de perfil de Rafael Almeida" />
         <TitleStyled>Olá, eu sou Rafa Almeida</TitleStyled>
         <TextStyled>
-          Technology is my way to change the world and this is why I am a
-          software engineer! I helped improve Brazil education I helped people
-          share their opinions online now I am helping people get their money
-          back!
+          Desenvolvedor Front-End desde 2022, trabalhando com tecnologias como
+          React, React Native , JavaScript, HTML e CSS e utilizando metodologias
+          ágeis, como Scrum. Apaixonado por desafios, por aprender coisas novas
+          buscando sempre um desafio novo para se enfrentar e novas
+          responsabilidades pra assumir. Já trabalhei em projeto que atinge centenas
+          de usuários tantos nacionais como internacionais.
         </TextStyled>
       </HeaderStyled>
       <SocialMedias>

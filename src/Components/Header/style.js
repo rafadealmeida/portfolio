@@ -42,6 +42,7 @@ white-space:normal;
 export const TextStyled = styled.p`
 text-align: left;
 width:50%;
+max-width: 50%;
 line-height: 2rem;
 `;
 
@@ -49,6 +50,7 @@ export const CardHomeInfos = styled.div`
 display: flex;
 flex-direction: column;
 justify-content: space-between;
+max-width: 50%;
 `;
 
 export const SocialMedias = styled.div`

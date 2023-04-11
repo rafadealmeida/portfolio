@@ -22,7 +22,7 @@ function App() {
             atque, ratione ducimus perspiciatis voluptatibus quisquam inventore
             veniam voluptate saepe`}
             link={
-              'https://www.notion.so/Meu-plano-de-estudos-5136b58655d044b08114203ad328af36'
+              'https://artwork-front.cleversystems.net/login'
             }
           />
           <Cards
@@ -70,7 +70,10 @@ function App() {
             }
           />
           <MiniCardsContainer>
-            <MiniCard />
+            <MiniCard
+            titulo={'Certificados'}
+            link={'https://cursos.alura.com.br/degree/certificate/b6e31f58-fc67-4cad-92db-fe0d6d1d3c4b'}
+            conteudo={`Formação em Front End`}/>
           </MiniCardsContainer>
         </CardsContainer>
       </ContainerHome>
