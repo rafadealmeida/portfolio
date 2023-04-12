@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 import {
   textGradientColorPrimary,
   textGradientColorSecondary,
@@ -25,6 +25,11 @@ height: 100vh;
 margin: 4rem 0;
 `;
 
+const hideToShow = keyframes`
+0% {opacity:0}
+100% {opacity:1}
+`
+
 export const TitleStyled = styled.h1`
 font-size: 72px;
 background: -webkit-linear-gradient(${textGradientColorPrimary},${textGradientColorSecondary});
@@ -32,11 +37,10 @@ background: -webkit-linear-gradient(${textGradientColorPrimary},${textGradientCo
 -webkit-text-fill-color: transparent;
 width: 70%;
 white-space:normal;
-/* @media screen and (max-width: 768px) {
-  font-size: 36px;
-  width: 110%;
+animation-name:${hideToShow};
+animation-duration:1.3s;
+transition: all ease-in;
 
-} */
 `;
 
 export const TextStyled = styled.p`

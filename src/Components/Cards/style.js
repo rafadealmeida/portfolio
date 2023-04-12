@@ -1,9 +1,14 @@
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 import {
   cardDark,
   textGradientColorPrimary,
   textGradientColorSecondary,
 } from '../UI/variables';
+
+const bottomToTop = keyframes`
+0% {transform: translateY(150%)}
+100% {transform: translateY(0%)}
+`;
 
 export const Card = styled.a`
   background-color:${cardDark};
@@ -17,6 +22,10 @@ export const Card = styled.a`
   transition: ease-in  0.3s;
   :hover{
     scale:1.1
+  }
+  :nth-last-child(-n + 4){
+    animation-name:${bottomToTop};
+    animation-duration:1.3s;
   }
 `;
 
