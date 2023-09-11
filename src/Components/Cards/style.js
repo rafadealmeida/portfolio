@@ -21,7 +21,7 @@ export const Card = styled.a`
   border-radius: 0.5rem;
   transition: ease-in  0.3s;
   :hover{
-    scale:1.1
+    scale:1.05
   }
   :nth-last-child(-n + 4){
     animation-name:${bottomToTop};
@@ -32,6 +32,7 @@ export const Card = styled.a`
 export const TitleCard = styled.h4`
   background: -webkit-linear-gradient(${textGradientColorPrimary},${textGradientColorSecondary});
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 `;
 export const SubTitleCard = styled.h2`

@@ -12,7 +12,8 @@ export const CardsContainer = styled.div`
  flex-grow: 1;
  gap: 1rem;
  overflow: scroll;
- margin: 2rem auto;
+ margin: 0 auto;
+ padding: 2rem 0;
  width: 100%;
   -ms-overflow-style: none;
   scrollbar-width: none;

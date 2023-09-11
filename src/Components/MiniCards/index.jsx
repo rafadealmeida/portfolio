@@ -9,5 +9,4 @@ export const MiniCard = ({titulo, subTitulo, conteudo, link}) => (
       {conteudo}
     </TextCard>
   </MiniCardStyle>
-  // <MiniCardStyle />
 );

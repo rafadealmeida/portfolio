@@ -7,6 +7,7 @@ import {
 
 export const IconStyled = styled.img`
   width: 25%;
+  /* height: 13%; */
   border-radius: 50%;
   margin-bottom: 1rem;
   /* @media screen and (max-width: 768px) {
@@ -34,6 +35,7 @@ export const TitleStyled = styled.h1`
 font-size: 72px;
 background: -webkit-linear-gradient(${textGradientColorPrimary},${textGradientColorSecondary});
 -webkit-background-clip: text;
+background-clip: text;
 -webkit-text-fill-color: transparent;
 width: 70%;
 white-space:normal;
@@ -75,7 +77,7 @@ export const CardSocial = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-size: ;
+  font-size: 16px;
   font-style: italic;
   color: white;
   transform-style: preserve-3d;
