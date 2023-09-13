@@ -1,5 +1,14 @@
-import React from 'react'
+import { Card, TitleCard, SubTitleCard, TextCard } from './style';
 
-export const Cards = () =>{
-  return (<></>)
-}
+// eslint-disable-next-line arrow-body-style
+export const Cards = ({titulo, categoria, conteudo, link}) => {
+  return (
+    <Card href={link} target="_blank">
+      <TitleCard>{categoria}</TitleCard>
+      <SubTitleCard>{titulo}</SubTitleCard>
+      <TextCard>
+        {conteudo}
+      </TextCard>
+    </Card>
+  );
+};

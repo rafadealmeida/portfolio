@@ -8,6 +8,7 @@
     "@testing-library/user-event": "^13.5.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-parallax-tilt": "^1.7.102",
     "react-scripts": "5.0.1",
     "styled-components": "^5.3.6",
     "web-vitals": "^2.1.4"
@@ -37,10 +38,16 @@
     ]
   },
   "devDependencies": {
+    "@babel/preset-react": "^7.18.6",
+    "@iconify/react": "^4.1.0",
     "eslint": "^8.31.0",
+    "eslint-config-airbnb": "^19.0.4",
     "eslint-config-prettier": "^8.6.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jsx-a11y": "^6.6.1",
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-react": "^7.31.11",
+    "eslint-plugin-react-hooks": "^4.6.0",
     "prettier": "^2.8.1"
   }
 }
