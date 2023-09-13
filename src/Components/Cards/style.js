@@ -27,6 +27,7 @@ export const Card = styled.a`
     animation-name:${bottomToTop};
     animation-duration:1.3s;
   }
+
 `;
 
 export const TitleCard = styled.h4`
@@ -34,13 +35,22 @@ export const TitleCard = styled.h4`
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
+@media screen and (max-width: 768px) {
+  font-size:.8em
+}
 `;
 export const SubTitleCard = styled.h2`
   font-weight: bold;
   font-size: 2em;
   margin: 0.2rem 0;
   background-color: transparent;
+@media screen and (max-width: 768px) {
+  line-height: 1.2em;
+}
 `;
 export const TextCard = styled.p`
   background-color: transparent;
+  @media screen and (max-width: 768px) {
+    font-size:13px
+  }
 `;

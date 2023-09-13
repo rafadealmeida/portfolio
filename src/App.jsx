@@ -1,5 +1,5 @@
 import { GlobalStyle } from './Components/GlobalStyle';
-import { ContainerHome, CardsContainer } from './Components/HomeStyled/style';
+import { ContainerHome, CardsContainer,TextStyledResponsive } from './Components/HomeStyled/style';
 import { Header } from './Components/Header';
 import { Cards } from './Components/Cards';
 import { MiniCardsContainer } from './Components/MiniCardsContainer';
@@ -14,6 +14,7 @@ function App() {
         {/* <Cards /> */}
 
         <CardsContainer>
+        <TextStyledResponsive>Projects</TextStyledResponsive>
           <Cards
             categoria={'Work experience'}
             titulo={'Artwork'}
@@ -34,28 +35,29 @@ function App() {
               'https://www.notion.so/Meu-plano-de-estudos-5136b58655d044b08114203ad328af36'
             }
           />
+          <TextStyledResponsive>Side Projects</TextStyledResponsive>
           <Cards
             categoria={'Side Project'}
             titulo={'Simplifica Doc'}
             conteudo={`Um sistema web para efetuação de documentos repetitivos, de maneira mais ágil e rápida.
-              Neste sistema você sobre um arquivo preparado, seguindo os padrões do sistema restacando palavras ou frases a serem substituidas, preenche um formulário
-              que o sistema criará, e seu documento com a informações colocadas no formulário estará pronto. Neste sistema foi usado o Framework NextJs com TypeScript,
-              Material UI, e utilizando Firabase  como banco de dados, integrado com o backend do NextJs`}
+            Neste sistema você sobre um arquivo preparado, seguindo os padrões do sistema restacando palavras ou frases a serem substituidas, preenche um formulário
+            que o sistema criará, e seu documento com a informações colocadas no formulário estará pronto. Neste sistema foi usado o Framework NextJs com TypeScript,
+            Material UI, e utilizando Firabase  como banco de dados, integrado com o backend do NextJs`}
             link={'https://simplifica-doc.vercel.app/'}
-          />
+            />
           <Cards
             categoria={'Side Project'}
             titulo={'Repertório Fogo Divino'}
             conteudo={`Um sistema web para visualização de cifras para os músicos da banca, separados por
             categorias e repertórios específicos. Neste sistema foi utilizado React, com Material UI, react router dom`}
             link={'https://repertoriofogodivino.vercel.app/missa'}
-          />
+            />
           <Cards
             categoria={'Side Project'}
             titulo={'Regi Lucena'}
             conteudo={`Site intitucional para uma cabeleleira. Neste projeto foi utilizado o CMS WordPress com Elmentor`}
             link={'https://regilucena.000webhostapp.com/'}
-          />
+            />
           {/* <Cards
             categoria={'Work experience'}
             titulo={'Front end'}
@@ -66,8 +68,8 @@ function App() {
             link={
               'https://www.notion.so/Meu-plano-de-estudos-5136b58655d044b08114203ad328af36'
             }
-          />
-          <Cards
+            />
+            <Cards
             categoria={'Work experience'}
             titulo={'Front end'}
             conteudo={`Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit enim
@@ -77,8 +79,8 @@ function App() {
             link={
               'https://www.notion.so/Meu-plano-de-estudos-5136b58655d044b08114203ad328af36'
             }
-          />
-          <Cards
+            />
+            <Cards
             categoria={'Work experience'}
             titulo={'Front end'}
             conteudo={`Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit enim
@@ -89,6 +91,7 @@ function App() {
               'https://www.notion.so/Meu-plano-de-estudos-5136b58655d044b08114203ad328af36'
             }
           /> */}
+          <TextStyledResponsive>Studies</TextStyledResponsive>
           <MiniCardsContainer>
             <MiniCard
               titulo={'Certificate'}

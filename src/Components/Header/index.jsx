@@ -1,7 +1,7 @@
 import Tilt from 'react-parallax-tilt';
 import { Icon } from '@iconify/react';
-// import Perfil from '../../assets/foto.jpg';
-import Perfil from '../../assets/perfil.jpg';
+import Perfil from '../../assets/foto_perfil.jpg';
+// import Perfil from '../../assets/perfil.jpg';
 import {
   HeaderStyled,
   IconStyled,
@@ -23,7 +23,7 @@ export const Header = () => {
         <TitleStyled>Olá, eu sou Rafa Almeida</TitleStyled>
         <TextStyled>
           Desenvolvedor Front-End desde 2022, trabalhando com tecnologias como
-          React, React Native, NextJS , JavaScript/TypeScript, HTML , CSS e WordPress, utilizando metodologias
+          React, React Native, NextJS , JavaScript, TypeScript, HTML , CSS e WordPress, utilizando metodologias
           ágeis, como Scrum. Apaixonado por desafios, por aprender coisas novas
           buscando sempre qa evolução e novas
           responsabilidades pra assumir. Já trabalhei em projeto que atinge centenas

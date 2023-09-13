@@ -10,10 +10,9 @@ export const IconStyled = styled.img`
   /* height: 13%; */
   border-radius: 50%;
   margin-bottom: 1rem;
-  /* @media screen and (max-width: 768px) {
-    width: 50%;
-    height: 50%;
-  } */
+  @media screen and (max-width: 768px) {
+    width: 40%;
+  }
 `;
 
 export const HeaderStyled = styled.div`
@@ -23,7 +22,17 @@ justify-content: flex-start;
 gap: 1rem;
 width: 100%;
 height: 100vh;
-margin: 4rem 0;
+padding-top: 1rem;
+@media screen and (max-width: 768px) {
+  height: 75vh;
+  margin: 0;
+
+}
+@media screen and (min-width: 768px) and (max-width: 960px) {
+  height: 45vh;
+  margin: 0;
+
+}
 `;
 
 const hideToShow = keyframes`
@@ -42,7 +51,15 @@ white-space:normal;
 animation-name:${hideToShow};
 animation-duration:1.3s;
 transition: all ease-in;
+@media screen and (max-width: 768px) {
+  font-size: 36px;
 
+}
+@media screen and (min-width: 768px) and (max-width: 960px) {
+  font-size: 48px;
+  width: 100%;
+
+}
 `;
 
 export const TextStyled = styled.p`
@@ -50,6 +67,18 @@ text-align: left;
 width:50%;
 max-width: 50%;
 line-height: 2rem;
+@media screen and (max-width: 768px) {
+  font-size: 13px;
+  width:100%;
+  max-width: 100%;
+
+}
+@media screen and (min-width: 768px) and (max-width: 960px) {
+  font-size: 16px;
+  width:95%;
+  max-width: 100%;
+
+}
 `;
 
 export const CardHomeInfos = styled.div`
@@ -57,6 +86,14 @@ display: flex;
 flex-direction: column;
 justify-content: space-between;
 max-width: 50%;
+@media screen and (max-width: 768px) {
+  max-width: 100%;
+  justify-content: space-between;
+  }
+@media screen and (min-width: 768px) and (max-width: 960px) {
+  max-width: 100%;
+  justify-content: space-between;
+  }
 `;
 
 export const SocialMedias = styled.div`
