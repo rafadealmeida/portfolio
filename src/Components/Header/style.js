@@ -24,12 +24,12 @@ width: 100%;
 height: 100vh;
 padding-top: 1rem;
 @media screen and (max-width: 768px) {
-  height: 75vh;
+  height: fit-content;
   margin: 0;
 
 }
 @media screen and (min-width: 768px) and (max-width: 960px) {
-  height: 45vh;
+  height: fit-content;
   margin: 0;
 
 }
@@ -38,7 +38,7 @@ padding-top: 1rem;
 const hideToShow = keyframes`
 0% {opacity:0}
 100% {opacity:1}
-`
+`;
 
 export const TitleStyled = styled.h1`
 font-size: 72px;
@@ -141,6 +141,20 @@ export const CardSocialParallex = styled.a`
     transform: translateZ(60px);
     background-color: transparent;
     :hover{
-    background-color: ${(props) => props.backColorHouver};
+      background-color: ${(props) => props.backColorHouver};
+    }
+    `;
+
+export const CardSocialLinkParallex = styled.a`
+    width: 25%;
+    padding: 2rem;
+    height: 80%;
+    @media screen and (max-width: 768px) {
+      margin-top: 1em;
+    padding: 0;
   }
-`;
+@media screen and (min-width: 768px) and (max-width: 960px) {
+  padding: 0;
+
+  }
+    `;
