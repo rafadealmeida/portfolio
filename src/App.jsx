@@ -22,7 +22,7 @@ function App() {
             quanto internacionais. Para este projeto utilizei React, JavaScript , Styled-components, Material UI, Zuztand, React Form
             Hook, Yup, Formik, i18next, React Flow,m React Query entre outras bibliotecas, para  versionamento de código com Git e GitHub, Scrum como
             metodologia ágil.`}
-            link={'https://artwork-front.cleversystems.net/login'}
+            link={'https://artworkdev.precisionartworkmanagement.com/login'}
           />
           <Cards
             categoria={'Work experience'}
@@ -31,9 +31,6 @@ function App() {
             Para este projeto, utilizei React com TypeScript, libs como react router dom, Material, react hook form,
             além de uso de hooks como useRef, useContext. O mais desafiador deste projeto foi que participei nele de forma autonôma,
             partindo da concepção à programação deste.`}
-            link={
-              'https://www.notion.so/Meu-plano-de-estudos-5136b58655d044b08114203ad328af36'
-            }
           />
           <TextStyledResponsive>Side Projects</TextStyledResponsive>
           <Cards
