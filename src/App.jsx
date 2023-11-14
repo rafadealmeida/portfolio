@@ -1,5 +1,9 @@
 import { GlobalStyle } from './Components/GlobalStyle';
-import { ContainerHome, CardsContainer,TextStyledResponsive } from './Components/HomeStyled/style';
+import {
+  ContainerHome,
+  CardsContainer,
+  TextStyledResponsive,
+} from './Components/HomeStyled/style';
 import { Header } from './Components/Header';
 import { Cards } from './Components/Cards';
 import { MiniCardsContainer } from './Components/MiniCardsContainer';
@@ -14,13 +18,18 @@ function App() {
         {/* <Cards /> */}
 
         <CardsContainer>
-        <TextStyledResponsive>Projects</TextStyledResponsive>
+          <TextStyledResponsive>Projects</TextStyledResponsive>
           <Cards
             categoria={'Work experience'}
             titulo={'Artwork'}
             conteudo={`Sistema de controle e revisão de artes que atende usuários tantos nacionais
-            quanto internacionais. Para este projeto utilizei React, JavaScript , Styled-components, Material UI, Zuztand, React Form
-            Hook, Yup, Formik, i18next, React Flow,m React Query entre outras bibliotecas, para  versionamento de código com Git e GitHub, Scrum como
+            quanto internacionais. Este projeto é especialmente notável, pois representou o meu primeiro passo no mundo profissional, em uma equipe com outros
+            desenvolvedores. Ao longo do tempo, evoluí para o papel de principal desenvolvedor, desempenhando um papel ativo na interação com os
+            clientes, análise de novos requisitos e na implementação de novas funcionalidades, correção de bugs entre outras atividades. Ao longo do projeto, desenvolvi significativamente minha autonomia,
+            o que me permitiu tomar decisões de forma independente e conduzir iniciativas e indicar novas soluções.
+            Para este projeto utilizei React, JavaScript , Styled-components, Material UI, Zuztand, React Form
+            Hook, Yup, Formik, i18next, React Flow, React Query entre outras bibliotecas,
+            para  versionamento de código com Git e GitHub, Scrum como
             metodologia ágil.`}
             link={'https://artworkdev.precisionartworkmanagement.com/login'}
           />
@@ -28,33 +37,67 @@ function App() {
             categoria={'Work experience'}
             titulo={'S3 Configurador'}
             conteudo={`Sistema para uso interno da empresa, onde criava um documento de configuração de um sistema de chamada de senhas.
-            Para este projeto, utilizei React com TypeScript, libs como react router dom, Material, react hook form,
-            além de uso de hooks como useRef, useContext. O mais desafiador deste projeto foi que participei nele de forma autonôma,
-            partindo da concepção à programação deste.`}
+            O aspecto mais desafiador deste projeto residia na minha atuação autônoma. Fui principal responsável por todas as etapas,
+            desde a concepção á programação inclusive na integração com os demais serviços.
+            Para este projeto, utilizei React com TypeScript, libs como React Router Dom, Material UI, React Hook Form,
+            além de uso de hooks como useRef, useContext para  versionamento de código com Git e GitHub, Scrum como
+            metodologia ágil.`}
           />
+          {/* <Cards
+            categoria={'Work experience'}
+            titulo={'DashBoard'}
+            conteudo={`Sistema para uso de clientes da empresa. O desafiadoor deste projeto foi a manipulação de dados recebidos do Back End, para
+            visualização de gráficos
+            Para este projeto, utilizei React com TypeScript, libs como React Router Dom, Material UI, React Hook Form,
+            além de uso de hooks como useRef, useContext para  versionamento de código com Git e GitHub, Scrum como
+            metodologia ágil.`}
+          /> */}
           <TextStyledResponsive>Side Projects</TextStyledResponsive>
           <Cards
             categoria={'Side Project'}
             titulo={'Simplifica Doc'}
-            conteudo={`Um sistema web para efetuação de documentos repetitivos, de maneira mais ágil e rápida.
-            Neste sistema você sobre um arquivo preparado, seguindo os padrões do sistema restacando palavras ou frases a serem substituidas, preenche um formulário
-            que o sistema criará, e seu documento com a informações colocadas no formulário estará pronto. Neste sistema foi usado o Framework NextJs com TypeScript,
+            conteudo={`Um sistema web para simplificar a criação de documentos repetitivos de forma ágil e eficiente.
+            A inspiração para esse projeto surgiu de uma necessidade pessoal: meu pai estava envolvido em um trabalho
+            que envolvia a elaboração constante de documentos semelhantes.
+            Isso me motivou a pensar em como automatizar e acelerar o processo, já que a maior parte desses documentos
+            compartilhava semelhanças, com apenas algumas partes que
+            precisavam ser personalizadas.
+            Neste sistema o usuário prepara o arquivo previamente(no word por exemplo), seguindo os padrões do sistema,
+            pontuando palavras ou frases a serem substituidas.
+            Ao fazer o upload do arquivo sistema gerará
+            um formulários com as palavras ou frases que o usuário deseja substituir. Preenchendo este formulário
+            o sistema modificará o seu documentos com as informações inseridas pelo usuário. Neste sistema foi usado o
+            Framework NextJs com TypeScript,
             Material UI, e utilizando Firabase  como banco de dados, integrado com o backend do NextJs`}
             link={'https://simplifica-doc.vercel.app/'}
-            />
+          />
           <Cards
             categoria={'Side Project'}
             titulo={'Repertório Fogo Divino'}
-            conteudo={`Um sistema web para visualização de cifras para os músicos da banca, separados por
-            categorias e repertórios específicos. Neste sistema foi utilizado React, com Material UI, react router dom`}
+            conteudo={`Um sistema web para visualização visualização e organização de cifras musicais para os membros da banda.
+            Esta iniciativa nasceu de uma motivação pessoal, uma vez que sou membro de uma banda religiosa que frequentemente
+            adaptava cifras de músicas e criava versões personalizadas.
+            Sentimos a necessidade de um espaço centralizado para armazenar e acessar esses documentos de maneira eficiente.
+            O sistema foi projetado para categorizar e organizar cifras em repertórios específicos, proporcionando fácil acesso aos músicos.
+            Outra necessidade que o sistema atendeu era quando íamos tocar em cerimonias onde não tínhamos um repertório definido,
+            e os pedidos de músicas podiam surgir a qualquer momento. Então previamente preparavamos diversas músicas que poderiam ser solicitadas
+            e deixavamos no sistema separado por categorias para facilitar e agilizar a busca quando necessário.
+            Neste sistema foi utilizado React, com Material UI, React Router Rom`}
             link={'https://repertoriofogodivino.vercel.app/missa'}
-            />
+          />
           <Cards
-            categoria={'Side Project'}
+            categoria={'Side Project - Freelancer'}
             titulo={'Regi Lucena'}
-            conteudo={`Site intitucional para uma cabeleleira. Neste projeto foi utilizado o CMS WordPress com Elmentor`}
-            link={'https://regilucena.000webhostapp.com/'}
-            />
+            conteudo={`Site intitucional para uma cabeleleira descrevendo suas habilidades, e os serviços prestados. Neste projeto foi utilizado o CMS WordPress com Elmentor`}
+            link={'https://regilucena.rafadealmeida.com.br/'}
+          />
+          {/* <Cards
+            categoria={'Side Project'}
+            titulo={'Absoluta Engenharia'}
+            conteudo={`Site intitucional para uma empresa de engenharia, no qual apresntava a empresa, seus colaboradores
+            e os serviços prestados. Neste projeto foi utilizado o CMS WordPress com Elmentor`}
+            link={'https://absolutaengenhariabr.com/'}
+          /> */}
           {/* <Cards
             categoria={'Work experience'}
             titulo={'Front end'}
@@ -91,6 +134,16 @@ function App() {
           <TextStyledResponsive>Studies</TextStyledResponsive>
           <MiniCardsContainer>
             <MiniCard
+              titulo={'Academic'}
+              subTitulo={'Senac'}
+              conteudo={`Técnico em Desenvolvimento de Sistema - Cursando`}
+            />
+            <MiniCard
+              titulo={'Academic'}
+              subTitulo={'UnB'}
+              conteudo={`Engenharias - Incompleto`}
+            />
+            <MiniCard
               titulo={'Certificate'}
               subTitulo={'Alura'}
               link={
@@ -105,16 +158,6 @@ function App() {
                 'https://cursos.alura.com.br/degree/certificate/2775a07d-9e2b-4b08-a7e9-2bacd25af4d5?lang=pt_BR'
               }
               conteudo={`JavaScript com foco no back-end `}
-            />
-            <MiniCard
-              titulo={'Academic'}
-              subTitulo={'Senac'}
-              conteudo={`Técnico em Desenvolvimento de Sistema - Cursando`}
-            />
-            <MiniCard
-              titulo={'Academic'}
-              subTitulo={'UnB'}
-              conteudo={`Engenharias - Incompleto`}
             />
           </MiniCardsContainer>
         </CardsContainer>
