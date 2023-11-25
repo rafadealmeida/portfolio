@@ -22,12 +22,12 @@ function App() {
           <Cards
             categoria={'Work experience'}
             titulo={'Artwork'}
-            conteudo={`Sistema de controle e revisão de artes que atende usuários tantos nacionais
+            conteudo={`Sistema web de controle e revisão de artes que atende usuários tantos nacionais
             quanto internacionais. Este projeto é especialmente notável, pois representou o meu primeiro passo no mundo profissional, em uma equipe com outros
-            desenvolvedores. Ao longo do tempo, evoluí para o papel de principal desenvolvedor, desempenhando um papel ativo na interação com os
+            desenvolvedores. Ao longo do tempo, evoluí para o papel de principal desenvolvedor Front End, desempenhando um papel ativo na interação com os
             clientes, análise de novos requisitos e na implementação de novas funcionalidades, correção de bugs entre outras atividades. Ao longo do projeto, desenvolvi significativamente minha autonomia,
             o que me permitiu tomar decisões de forma independente e conduzir iniciativas e indicar novas soluções.
-            Para este projeto utilizei React, JavaScript , Styled-components, Material UI, Zuztand, React Form
+            Para este projeto utilizei React, JavaScript , Material UI, Zuztand, React Form
             Hook, Yup, Formik, i18next, React Flow, React Query entre outras bibliotecas,
             para  versionamento de código com Git e GitHub, Scrum como
             metodologia ágil.`}
@@ -35,12 +35,31 @@ function App() {
           />
           <Cards
             categoria={'Work experience'}
-            titulo={'S3 Configurador'}
+            titulo={'S3 Configurator'}
             conteudo={`Sistema para uso interno da empresa, onde criava um documento de configuração de um sistema de chamada de senhas.
-            O aspecto mais desafiador deste projeto residia na minha atuação autônoma. Fui principal responsável por todas as etapas,
-            desde a concepção á programação inclusive na integração com os demais serviços.
+            O aspecto mais desafiador deste projeto residia na minha atuação autônoma. Liderei o projeto e fui principal responsável por todas as etapas,
+            desde a concepção á programação inclusive na integração com os demais serviços. Este sistema reduziu significamente a quantidade de atendimentos de suporte,
+            vinculados a este projeto além de fornecer mais agilidade para a implantação de novos clientes.
             Para este projeto, utilizei React com TypeScript, libs como React Router Dom, Material UI, React Hook Form,
-            além de uso de hooks como useRef, useContext para  versionamento de código com Git e GitHub, Scrum como
+            além de uso de hooks como useRef, useContext, useCallback e versionamento de código com Git e GitHub, Scrum como
+            metodologia ágil e integração com um projeto em electron já existente.`}
+            />
+          <Cards
+            categoria={'Work experience'}
+            titulo={'Extrator OS'}
+            conteudo={`Sistema web para uso interno da empresa, para clientes poderem vê o status de sua Ordem de Serviço, com mais agilidade
+            ou até mesmo o suporte técnico, ter mais agilidade para conferir o status e compartilhar com o cliente. Esse projeto reduziu o tempo gasto para responder os clientes
+            do seus Status, assim o suporte podendo se focar em outras atividades mais prioritárias.
+            Para este projeto, utilizei React com TypeScript, libs como React Router Dom, Material UI e versionamento de código com Git e GitHub, Scrum como
+            metodologia ágil.`}
+          />
+          <Cards
+            categoria={'Work experience'}
+            titulo={'S3 Clint Configurator'}
+            conteudo={`Sistema web para uso interno da empresa, para clientes poderem vê o status de sua Ordem de Serviço, com mais agilidade
+            ou o suporte técnico, ter mais agilidade para conferir o status e compartilhar com o cliente. Esse projeto reduziu o tempo gasto para responder os clientes
+            do seus Status, assim o suporte podendo se focar em outras atividades mais prioritárias.
+            Para este projeto, utilizei React com TypeScript, libs como React Router Dom, Material UI e versionamento de código com Git e GitHub, Scrum como
             metodologia ágil.`}
           />
           {/* <Cards
@@ -68,7 +87,7 @@ function App() {
             um formulários com as palavras ou frases que o usuário deseja substituir. Preenchendo este formulário
             o sistema modificará o seu documentos com as informações inseridas pelo usuário. Neste sistema foi usado o
             Framework NextJs com TypeScript,
-            Material UI, e utilizando Firabase  como banco de dados, integrado com o backend do NextJs`}
+            Material UI, React-Hook-Form e utilizando Firebase como banco de dados`}
             link={'https://simplifica-doc.vercel.app/'}
           />
           <Cards
@@ -88,7 +107,8 @@ function App() {
           <Cards
             categoria={'Side Project - Freelancer'}
             titulo={'Regi Lucena'}
-            conteudo={`Site intitucional para uma cabeleleira descrevendo suas habilidades, e os serviços prestados. Neste projeto foi utilizado o CMS WordPress com Elmentor`}
+            conteudo={`Site intitucional para uma cabeleleira descrevendo suas habilidades, e os serviços prestados. Para este site efetuei o desgin do site.
+             Neste projeto foi utilizado o CMS WordPress com Elmentor e o Figma para fazer os protótipos e desgin`}
             link={'https://regilucena.rafadealmeida.com.br/'}
           />
           {/* <Cards
@@ -108,29 +128,7 @@ function App() {
             link={
               'https://www.notion.so/Meu-plano-de-estudos-5136b58655d044b08114203ad328af36'
             }
-            />
-            <Cards
-            categoria={'Work experience'}
-            titulo={'Front end'}
-            conteudo={`Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit enim
-            repudiandae eaque quas iste? Est, earum vel. Eum, asperiores! Facere
-            atque, ratione ducimus perspiciatis voluptatibus quisquam inventore
-            veniam voluptate saepe`}
-            link={
-              'https://www.notion.so/Meu-plano-de-estudos-5136b58655d044b08114203ad328af36'
-            }
-            />
-            <Cards
-            categoria={'Work experience'}
-            titulo={'Front end'}
-            conteudo={`Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit enim
-            repudiandae eaque quas iste? Est, earum vel. Eum, asperiores! Facere
-            atque, ratione ducimus perspiciatis voluptatibus quisquam inventore
-            veniam voluptate saepe`}
-            link={
-              'https://www.notion.so/Meu-plano-de-estudos-5136b58655d044b08114203ad328af36'
-            }
-          /> */}
+            /> */}
           <TextStyledResponsive>Studies</TextStyledResponsive>
           <MiniCardsContainer>
             <MiniCard
