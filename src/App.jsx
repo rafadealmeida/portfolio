@@ -1,3 +1,5 @@
+import Tilt from 'react-parallax-tilt';
+import { Icon } from '@iconify/react';
 import { GlobalStyle } from './Components/GlobalStyle';
 import {
   ContainerHome,
@@ -8,6 +10,11 @@ import { Header } from './Components/Header';
 import { Cards } from './Components/Cards';
 import { MiniCardsContainer } from './Components/MiniCardsContainer';
 import { MiniCard } from './Components/MiniCards';
+import {
+  CardSocialLinkParallex,
+  CardSocialParallex,
+  TitleSocialCard,
+} from './Components/Header/style';
 
 function App() {
   return (
@@ -19,6 +26,100 @@ function App() {
 
         <CardsContainer>
           <TextStyledResponsive>Projects</TextStyledResponsive>
+          <Cards
+            categoria={'Work experience'}
+            titulo={'Meu Sesc-DF (iOS e Android)'}
+            conteudo={`Este aplicativo, com aais de 1500 mil usuários, foi desenvolvido para atender as necessidades dos usuários do Sesc-DF, oferecendo funcionalidades como acompanhamento e solicitação de credenciais,
+              reservas de pacotes turísticos, e agendamento de exames e consultas médicas nas unidades do Sesc-DF. Também permite que os usuários acompanhem eventos organizados ou em
+              parceria com o Sesc, além de validar ingressos para eventos diretamente pelo aplicativo para usuários com perfis específicos. O app conta com registro facial para facilitar
+              o acesso às unidades através de catracas, suporte ao envio de mensagens via SAC, e acesso a uma seção de perguntas frequentes. Os usuários podem consultar informações
+              detalhadas sobre as unidades, incluindo localizações, contatos e serviços disponíveis, visualizar parceiros que oferecem convênios, descontos e benefícios, além de acessar e
+              baixar livros disponibilizados pelo Sesc.
+              Ao entrar no projeto, assumi a responsabilidade por melhorias, implementação de bibliotecas, fluxos complexos como credenciamento, marcação e remarcação de exames e consultas
+              e agendamento de pacotes, além da submissão nas lojas oficiais e configuração de publicação. Utilizei React Native, TypeScript, Expo, Zod, React Hook Form, TanStack Query,
+              Git/GitLab e Scrum como metodologia ágil.
+              `}
+            parallaxCard
+            children={
+              <>
+                <CardSocialLinkParallex
+                  href="https://play.google.com/store/search?q=meu+sesc+df&c=apps&hl=pt_BR"
+                  target="_blank"
+                  rel="noreferrer"
+                  style={{
+                    backgroundColor: 'transparent',
+                    height: 30,
+                    width: 100,
+                  }}
+                >
+                  <Tilt
+                    className="parallax-effect-glare-scale"
+                    perspective={500}
+                    glareMaxOpacity={0.45}
+                    scale={1.3}
+                  >
+                    <CardSocialParallex
+                      href="https://play.google.com/store/search?q=meu+sesc+df&c=apps&hl=pt_BR"
+                      target="_blank"
+                    >
+                      <TitleSocialCard>
+                        <Icon
+                          icon="mage:playstore"
+                          color="white"
+                          fontSize={'2rem'}
+                          style={{ backgroundColor: 'transparent' }}
+                        />
+                      </TitleSocialCard>
+                    </CardSocialParallex>
+                  </Tilt>
+                </CardSocialLinkParallex>
+                <CardSocialLinkParallex
+                  href="https://apps.apple.com/br/app/meu-sesc-df/id6502848536"
+                  target="_blank"
+                  rel="noreferrer"
+                  style={{
+                    backgroundColor: 'transparent',
+                    height: 30,
+                    width: 100,
+                  }}
+                >
+                  <Tilt
+                    className="parallax-effect-glare-scale"
+                    perspective={500}
+                    glareMaxOpacity={0.45}
+                    scale={1.3}
+                  >
+                    <CardSocialParallex
+                      href="https://apps.apple.com/br/app/meu-sesc-df/id6502848536"
+                      target="_blank"
+                    >
+                      <TitleSocialCard>
+                        <Icon
+                          icon="ph:app-store-logo-bold"
+                          color="white"
+                          fontSize={'2rem'}
+                          style={{ backgroundColor: 'transparent' }}
+                        />
+                      </TitleSocialCard>
+                    </CardSocialParallex>
+                  </Tilt>
+                </CardSocialLinkParallex>
+              </>
+            }
+          />
+          <Cards
+            categoria={'Work experience'}
+            titulo={'S3 Painel TV (Android TV - Fire TV)'}
+            conteudo={`Este aplicativo, desenvolvido para Android TV com foco na Fire TV, oferece funcionalidades de exibição de tabela de preços, notícias e gerenciamento de senhas de
+              atendimento integradas com totens. As senhas retiradas pelos usuários eram inseridas no sistema e chamadas via controle remoto (usando Arduino) ou por computador.
+              Enquanto as senhas não eram chamadas, ou o sistema não possui necessidade de utilização de senha , o app exibia notícias, com modos ajustáveis para cada necessidade:
+              apenas notícias, ou notícias com exibição de senhas. O sistema
+              verificava a conexão com a internet para garantir a atualização das notícias e, em caso de desconexão, exibia conteúdo salvo até a reconexão. O mesmo se aplicava para a
+              tabela de preços, que era atualizada periodicamente.
+              O projeto foi desenvolvido utilizando React Native, TypeScript, Expo e Axios, e é utilizado com sucesso em locais como lotéricas e supermercados (Superbom e Tatico),
+              impactando milhares de usuários mensalmente.
+              `}
+          />
           <Cards
             categoria={'Work experience'}
             titulo={'Artwork'}
@@ -43,7 +144,7 @@ function App() {
             Para este projeto, utilizei React com TypeScript, libs como React Router Dom, Material UI, React Hook Form,
             além de uso de hooks como useRef, useContext, useCallback e versionamento de código com Git e GitHub, Scrum como
             metodologia ágil e integração com um projeto em electron já existente.`}
-            />
+          />
           <Cards
             categoria={'Work experience'}
             titulo={'Extrator OS'}
@@ -62,15 +163,11 @@ function App() {
             Para este projeto, utilizei React com TypeScript, libs como React Router Dom, Material UI e versionamento de código com Git e GitHub, Scrum como
             metodologia ágil.`}
           />
-          {/* <Cards
+          <Cards
             categoria={'Work experience'}
-            titulo={'DashBoard'}
-            conteudo={`Sistema para uso de clientes da empresa. O desafiadoor deste projeto foi a manipulação de dados recebidos do Back End, para
-            visualização de gráficos
-            Para este projeto, utilizei React com TypeScript, libs como React Router Dom, Material UI, React Hook Form,
-            além de uso de hooks como useRef, useContext para  versionamento de código com Git e GitHub, Scrum como
-            metodologia ágil.`}
-          /> */}
+            titulo={'Sesc App'}
+            conteudo={`Aplicativo criado para Smartphones. Neste aplicativo o usuário poderia solicitar credencial do Sesc-DF, acompanhar e fazer reservas `}
+          />
           <TextStyledResponsive>Side Projects</TextStyledResponsive>
           <Cards
             categoria={'Side Project'}

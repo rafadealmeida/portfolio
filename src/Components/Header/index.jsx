@@ -11,7 +11,7 @@ import {
   SocialMedias,
   TitleSocialCard,
   CardSocialParallex,
-  CardSocialLinkParallex
+  CardSocialLinkParallex,
 } from './style';
 import './styleTiltcss.css';
 
@@ -26,9 +26,9 @@ export const Header = () => {
           Desenvolvedor Front-End desde 2022, trabalhando com tecnologias como
           React, React Native, NextJS , JavaScript, TypeScript, HTML , CSS e
           WordPress, utilizando metodologias ágeis, como Scrum. Apaixonado por
-          desafios, por aprender coisas novas buscando sempre a evolução e
-          novas responsabilidades pra assumir. Já trabalhei em projeto que
-          atinge centenas de usuários tantos nacionais como internacionais.
+          desafios, por aprender coisas novas buscando sempre a evolução e novas
+          responsabilidades pra assumir. Já trabalhei em projeto que atinge
+          centenas de usuários tantos nacionais como internacionais.
         </TextStyled>
       </HeaderStyled>
       <SocialMedias>
@@ -58,6 +58,7 @@ export const Header = () => {
             </CardSocialParallex>
           </Tilt>
         </CardSocialLinkParallex>
+
         <CardSocialLinkParallex
           href="https://github.com/rafadealmeida"
           target="_blank"

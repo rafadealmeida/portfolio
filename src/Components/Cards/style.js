@@ -54,3 +54,10 @@ export const TextCard = styled.p`
     font-size:13px
   }
 `;
+
+export const CardsParralax = styled.div`
+  display: flex;
+  flex-direction: row;
+  background-color: transparent;
+  margin-bottom:2rem
+`;
