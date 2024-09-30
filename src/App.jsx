@@ -163,11 +163,6 @@ function App() {
             Para este projeto, utilizei React com TypeScript, libs como React Router Dom, Material UI e versionamento de código com Git e GitHub, Scrum como
             metodologia ágil.`}
           />
-          <Cards
-            categoria={'Work experience'}
-            titulo={'Sesc App'}
-            conteudo={`Aplicativo criado para Smartphones. Neste aplicativo o usuário poderia solicitar credencial do Sesc-DF, acompanhar e fazer reservas `}
-          />
           <TextStyledResponsive>Side Projects</TextStyledResponsive>
           <Cards
             categoria={'Side Project'}
