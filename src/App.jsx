@@ -1,5 +1,3 @@
-import Tilt from 'react-parallax-tilt';
-import { Icon } from '@iconify/react';
 import { GlobalStyle } from './Components/GlobalStyle';
 import {
   ContainerHome,
@@ -10,11 +8,6 @@ import { Header } from './Components/Header';
 import { Cards } from './Components/Cards';
 import { MiniCardsContainer } from './Components/MiniCardsContainer';
 import { MiniCard } from './Components/MiniCards';
-import {
-  CardSocialLinkParallex,
-  CardSocialParallex,
-  TitleSocialCard,
-} from './Components/Header/style';
 
 function App() {
   return (
@@ -28,140 +21,56 @@ function App() {
           <TextStyledResponsive>Projects</TextStyledResponsive>
           <Cards
             categoria={'Work experience'}
-            titulo={'Meu Sesc-DF (iOS e Android)'}
-            conteudo={`Este aplicativo, com aais de 1500 mil usuários, foi desenvolvido para atender as necessidades dos usuários do Sesc-DF, oferecendo funcionalidades como acompanhamento e solicitação de credenciais,
-              reservas de pacotes turísticos, e agendamento de exames e consultas médicas nas unidades do Sesc-DF. Também permite que os usuários acompanhem eventos organizados ou em
-              parceria com o Sesc, além de validar ingressos para eventos diretamente pelo aplicativo para usuários com perfis específicos. O app conta com registro facial para facilitar
-              o acesso às unidades através de catracas, suporte ao envio de mensagens via SAC, e acesso a uma seção de perguntas frequentes. Os usuários podem consultar informações
-              detalhadas sobre as unidades, incluindo localizações, contatos e serviços disponíveis, visualizar parceiros que oferecem convênios, descontos e benefícios, além de acessar e
-              baixar livros disponibilizados pelo Sesc.
-              Ao entrar no projeto, assumi a responsabilidade por melhorias, implementação de bibliotecas, fluxos complexos como credenciamento, marcação e remarcação de exames e consultas
-              e agendamento de pacotes, além da submissão nas lojas oficiais e configuração de publicação. Utilizei React Native, TypeScript, Expo, Zod, React Hook Form, TanStack Query,
-              Git/GitLab e Scrum como metodologia ágil.
+            titulo={'PesqBrasil (MPA – Ministério da Pesca e Aquicultura)'}
+            conteudo={`Sistema nacional de registro e gestão da pesca, desenvolvido em parceria com o Ministério da Pesca e Aquicultura (MPA), responsável por atender mais de 2 milhões de pescadores registrados e com média de 20 mil acessos diários.
+              Atuo como líder técnico de front-end, conduzindo a implementação de módulos críticos, padronização de componentes, avaliação de Merge Requests e revisões de código, garantindo qualidade e consistência entre entregas.
+              Participei ativamente da definição de arquitetura junto ao Tech Lead de organização, apoiando a disseminação de boas práticas entre equipes e o alinhamento técnico entre front e back-end.
+              Em momentos críticos, também colaborei com o time de back-end, realizando ajustes e correções em serviços Java Spring Boot, além de apoiar testes de carga — desde a preparação de volumetria e saneamento de dados até a implementação de cenários complexos com o framework K6.
+              Stack: React, Next.js, TypeScript, React Hook Form, Zustand, Java Spring Boot, PostgreSQL, Docker e K6.
               `}
-            parallaxCard
-            children={
-              <>
-                <CardSocialLinkParallex
-                  href="https://play.google.com/store/search?q=meu+sesc+df&c=apps&hl=pt_BR"
-                  target="_blank"
-                  rel="noreferrer"
-                  style={{
-                    backgroundColor: 'transparent',
-                    height: 30,
-                    width: 100,
-                  }}
-                >
-                  <Tilt
-                    className="parallax-effect-glare-scale"
-                    perspective={500}
-                    glareMaxOpacity={0.45}
-                    scale={1.3}
-                  >
-                    <CardSocialParallex
-                      href="https://play.google.com/store/search?q=meu+sesc+df&c=apps&hl=pt_BR"
-                      target="_blank"
-                    >
-                      <TitleSocialCard>
-                        <Icon
-                          icon="mage:playstore"
-                          color="white"
-                          fontSize={'2rem'}
-                          style={{ backgroundColor: 'transparent' }}
-                        />
-                      </TitleSocialCard>
-                    </CardSocialParallex>
-                  </Tilt>
-                </CardSocialLinkParallex>
-                <CardSocialLinkParallex
-                  href="https://apps.apple.com/br/app/meu-sesc-df/id6502848536"
-                  target="_blank"
-                  rel="noreferrer"
-                  style={{
-                    backgroundColor: 'transparent',
-                    height: 30,
-                    width: 100,
-                  }}
-                >
-                  <Tilt
-                    className="parallax-effect-glare-scale"
-                    perspective={500}
-                    glareMaxOpacity={0.45}
-                    scale={1.3}
-                  >
-                    <CardSocialParallex
-                      href="https://apps.apple.com/br/app/meu-sesc-df/id6502848536"
-                      target="_blank"
-                    >
-                      <TitleSocialCard>
-                        <Icon
-                          icon="ph:app-store-logo-bold"
-                          color="white"
-                          fontSize={'2rem'}
-                          style={{ backgroundColor: 'transparent' }}
-                        />
-                      </TitleSocialCard>
-                    </CardSocialParallex>
-                  </Tilt>
-                </CardSocialLinkParallex>
-              </>
-            }
+          />
+          <Cards
+            categoria={'Work experience'}
+            titulo={'Aplicativo mobile (iOS e Android)'}
+            conteudo={`Aplicativo institucional com mais de 50 mil downloads, que centraliza serviços como credenciamento, reservas, agendamentos de exames e consultas, pacotes turísticos e validação de ingressos.
+              Assumi papel de referência técnica no front-end mobile, liderando melhorias estruturais, implementando bibliotecas críticas e coordenando fluxos complexos (credenciamento, reagendamento de consultas, autenticação facial e integração com sistemas legados).
+              Também atuei na publicação e configuração nas lojas oficiais (App Store e Play Store) e na orientação técnica de outros desenvolvedores.
+              Stack: React Native, TypeScript, Expo, React Hook Form, Zod, TanStack Query, GitLab e metodologias ágeis (Scrum).
+              `}
           />
           <Cards
             categoria={'Work experience'}
             titulo={'S3 Painel TV (Android TV - Fire TV)'}
-            conteudo={`Este aplicativo, desenvolvido para Android TV com foco na Fire TV, oferece funcionalidades de exibição de tabela de preços, notícias e gerenciamento de senhas de
-              atendimento integradas com totens. As senhas retiradas pelos usuários eram inseridas no sistema e chamadas via controle remoto (usando Arduino) ou por computador.
-              Enquanto as senhas não eram chamadas, ou o sistema não possui necessidade de utilização de senha , o app exibia notícias, com modos ajustáveis para cada necessidade:
-              apenas notícias, ou notícias com exibição de senhas. O sistema
-              verificava a conexão com a internet para garantir a atualização das notícias e, em caso de desconexão, exibia conteúdo salvo até a reconexão. O mesmo se aplicava para a
-              tabela de preços, que era atualizada periodicamente.
-              O projeto foi desenvolvido utilizando React Native, TypeScript, Expo e Axios, e é utilizado com sucesso em locais como lotéricas e supermercados (Superbom e Tatico),
-              impactando milhares de usuários mensalmente.
+            conteudo={`Aplicativo corporativo voltado a exibição de notícias e senhas de atendimento em painéis inteligentes, integrados com totens e controle via Arduino.
+              Fui responsável por conceber e liderar a arquitetura do front-end, garantindo estabilidade offline, automação de atualização de conteúdo e operação contínua em redes limitadas.
+              O sistema hoje opera em redes de supermercados e lotéricas, impactando milhares de atendimentos mensais.
+              Stack: React Native, TypeScript, Expo, Axios, CI/CD GitHub.
               `}
           />
           <Cards
             categoria={'Work experience'}
             titulo={'Artwork'}
-            conteudo={`Sistema web de controle e revisão de artes que atende usuários tantos nacionais
-            quanto internacionais. Este projeto é especialmente notável, pois representou o meu primeiro passo no mundo profissional, em uma equipe com outros
-            desenvolvedores. Ao longo do tempo, evoluí para o papel de principal desenvolvedor Front End, desempenhando um papel ativo na interação com os
-            clientes, análise de novos requisitos e na implementação de novas funcionalidades, correção de bugs entre outras atividades. Ao longo do projeto, desenvolvi significativamente minha autonomia,
-            o que me permitiu tomar decisões de forma independente e conduzir iniciativas e indicar novas soluções.
-            Para este projeto utilizei React, JavaScript , Material UI, Zuztand, React Form
-            Hook, Yup, Formik, i18next, React Flow, React Query entre outras bibliotecas,
-            para  versionamento de código com Git e GitHub, Scrum como
-            metodologia ágil.`}
-            link={'https://artworkdev.precisionartworkmanagement.com/login'}
+            conteudo={`Plataforma internacional de gestão e revisão de artes gráficas, atendendo clientes no Brasil, EUA e Europa.
+              Comecei como desenvolvedor júnior e evoluí para líder técnico front-end, conduzindo sprints, refinamentos e orientando o time em boas práticas.
+              Atuei diretamente com stakeholders na análise de requisitos, priorização.
+              Stack: React, Material UI, Zustand, React Hook Form, React Query, React Flow, i18next, GitHub e Scrum.
+          `}
           />
           <Cards
             categoria={'Work experience'}
             titulo={'S3 Configurator'}
-            conteudo={`Sistema para uso interno da empresa, onde criava um documento de configuração de um sistema de chamada de senhas.
-            O aspecto mais desafiador deste projeto residia na minha atuação autônoma. Liderei o projeto e fui principal responsável por todas as etapas,
-            desde a concepção á programação inclusive na integração com os demais serviços. Este sistema reduziu significamente a quantidade de atendimentos de suporte,
-            vinculados a este projeto além de fornecer mais agilidade para a implantação de novos clientes.
-            Para este projeto, utilizei React com TypeScript, libs como React Router Dom, Material UI, React Hook Form,
-            além de uso de hooks como useRef, useContext, useCallback e versionamento de código com Git e GitHub, Scrum como
-            metodologia ágil e integração com um projeto em electron já existente.`}
+            conteudo={`Ferramenta interna desenvolvida de forma autônoma e integral, para geração de documentos de configuração de sistemas de senhas eletrônicas.
+              Liderei o projeto de ponta a ponta, desde o desenho arquitetural, UI/UX e desenvolvimento até a integração com sistemas legados Electron.
+              O sistema reduziu em mais de 30% o volume de chamados de suporte e acelerou implantações em novos clientes.
+              Stack: React, TypeScript, React Router, Material UI, React Hook Form, Git/GitHub e Scrum.`}
           />
           <Cards
             categoria={'Work experience'}
             titulo={'Extrator OS'}
-            conteudo={`Sistema web para uso interno da empresa, para clientes poderem vê o status de sua Ordem de Serviço, com mais agilidade
-            ou até mesmo o suporte técnico, ter mais agilidade para conferir o status e compartilhar com o cliente. Esse projeto reduziu o tempo gasto para responder os clientes
-            do seus Status, assim o suporte podendo se focar em outras atividades mais prioritárias.
-            Para este projeto, utilizei React com TypeScript, libs como React Router Dom, Material UI e versionamento de código com Git e GitHub, Scrum como
-            metodologia ágil.`}
-          />
-          <Cards
-            categoria={'Work experience'}
-            titulo={'S3 Clint Configurator'}
-            conteudo={`Sistema web para uso interno da empresa, para clientes poderem vê o status de sua Ordem de Serviço, com mais agilidade
-            ou o suporte técnico, ter mais agilidade para conferir o status e compartilhar com o cliente. Esse projeto reduziu o tempo gasto para responder os clientes
-            do seus Status, assim o suporte podendo se focar em outras atividades mais prioritárias.
-            Para este projeto, utilizei React com TypeScript, libs como React Router Dom, Material UI e versionamento de código com Git e GitHub, Scrum como
-            metodologia ágil.`}
+            conteudo={`Sistema web para uso interno da empresa,para acompanhamento de Ordens de Serviço em tempo real, reduzindo tempo de resposta do suporte e aumentando a transparência
+              para clientes.Foi otimizado a comunicação entre o suporte e clientes, permitindo consulta autônoma de status de ordens de serviço.
+              Atuei como desenvolvedor responsável pelo front-end, desde a concepção até a entrega, priorizando performance e clareza na comunicação dos dados.
+              Stack: React, TypeScript, React Router, Material UI, Git/GitHub, Scrum.`}
           />
           <TextStyledResponsive>Side Projects</TextStyledResponsive>
           <Cards
@@ -170,16 +79,12 @@ function App() {
             conteudo={`Um sistema web para simplificar a criação de documentos repetitivos de forma ágil e eficiente.
             A inspiração para esse projeto surgiu de uma necessidade pessoal: meu pai estava envolvido em um trabalho
             que envolvia a elaboração constante de documentos semelhantes.
-            Isso me motivou a pensar em como automatizar e acelerar o processo, já que a maior parte desses documentos
-            compartilhava semelhanças, com apenas algumas partes que
-            precisavam ser personalizadas.
             Neste sistema o usuário prepara o arquivo previamente(no word por exemplo), seguindo os padrões do sistema,
             pontuando palavras ou frases a serem substituidas.
             Ao fazer o upload do arquivo sistema gerará
             um formulários com as palavras ou frases que o usuário deseja substituir. Preenchendo este formulário
-            o sistema modificará o seu documentos com as informações inseridas pelo usuário. Neste sistema foi usado o
-            Framework NextJs com TypeScript,
-            Material UI, React-Hook-Form e utilizando Firebase como banco de dados`}
+            o sistema modificará o seu documentos com as informações inseridas pelo usuário.
+            Stack: Next.js, TypeScript, Material UI, React Hook Form, Firebase.`}
             link={'https://simplifica-doc.vercel.app/'}
           />
           <Cards
@@ -189,18 +94,15 @@ function App() {
             Esta iniciativa nasceu de uma motivação pessoal, uma vez que sou membro de uma banda religiosa que frequentemente
             adaptava cifras de músicas e criava versões personalizadas.
             Sentimos a necessidade de um espaço centralizado para armazenar e acessar esses documentos de maneira eficiente.
-            O sistema foi projetado para categorizar e organizar cifras em repertórios específicos, proporcionando fácil acesso aos músicos.
-            Outra necessidade que o sistema atendeu era quando íamos tocar em cerimonias onde não tínhamos um repertório definido,
-            e os pedidos de músicas podiam surgir a qualquer momento. Então previamente preparavamos diversas músicas que poderiam ser solicitadas
-            e deixavamos no sistema separado por categorias para facilitar e agilizar a busca quando necessário.
-            Neste sistema foi utilizado React, com Material UI, React Router Rom`}
+            Atuei como idealizador e desenvolvedor principal, aplicando boas práticas de usabilidade e organização de dados em tempo real.
+            Stack: React, Material UI, React Router DOM.`}
             link={'https://repertoriofogodivino.vercel.app/missa'}
           />
           <Cards
             categoria={'Side Project - Freelancer'}
             titulo={'Regi Lucena'}
-            conteudo={`Site intitucional para uma cabeleleira descrevendo suas habilidades, e os serviços prestados. Para este site efetuei o desgin do site.
-             Neste projeto foi utilizado o CMS WordPress com Elmentor e o Figma para fazer os protótipos e desgin`}
+            conteudo={`Site institucional desenvolvido em WordPress + Elementor, com design exclusivo no Figma e foco na presença digital e posicionamento de marca.
+              Atuei desde o design até a publicação final, garantindo performance e SEO adequados ao público-alvo.`}
             link={'https://regilucena.rafadealmeida.com.br/'}
           />
           {/* <Cards
@@ -226,12 +128,17 @@ function App() {
             <MiniCard
               titulo={'Academic'}
               subTitulo={'Senac'}
-              conteudo={`Técnico em Desenvolvimento de Sistema - Cursando`}
+              conteudo={`Técnico em Desenvolvimento de Sistema`}
             />
             <MiniCard
               titulo={'Academic'}
               subTitulo={'UnB'}
               conteudo={`Engenharias - Incompleto`}
+            />
+            <MiniCard
+              titulo={'Certificate'}
+              subTitulo={'Curso.dev'}
+              conteudo={`Full Cycle - Em andamento`}
             />
             <MiniCard
               titulo={'Certificate'}
@@ -241,14 +148,14 @@ function App() {
               }
               conteudo={`Formação em Front End`}
             />
-            <MiniCard
+            {/* <MiniCard
               titulo={'Certificate'}
               subTitulo={'Alura'}
               link={
                 'https://cursos.alura.com.br/degree/certificate/2775a07d-9e2b-4b08-a7e9-2bacd25af4d5?lang=pt_BR'
               }
               conteudo={`JavaScript com foco no back-end `}
-            />
+            /> */}
           </MiniCardsContainer>
         </CardsContainer>
       </ContainerHome>

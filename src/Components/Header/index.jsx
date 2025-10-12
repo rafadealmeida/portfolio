@@ -23,12 +23,41 @@ export const Header = () => {
         <IconStyled src={Perfil} alt="Foto de perfil de Rafael Almeida" />
         <TitleStyled>Olá, eu sou Rafa Almeida</TitleStyled>
         <TextStyled>
-          Desenvolvedor Front-End desde 2022, trabalhando com tecnologias como
-          React, React Native, NextJS , JavaScript, TypeScript, HTML , CSS e
-          WordPress, utilizando metodologias ágeis, como Scrum. Apaixonado por
-          desafios, por aprender coisas novas buscando sempre a evolução e novas
-          responsabilidades pra assumir. Já trabalhei em projeto que atinge
-          centenas de usuários tantos nacionais como internacionais.
+          Desenvolvedor Front-End desde 2022, com sólida experiência em{' '}
+          <strong>React</strong>, <strong>React Native</strong>,{' '}
+          <strong>Next.js</strong>,<strong>TypeScript</strong>,{' '}
+          <strong>JavaScript</strong>, <strong>HTML</strong>,{' '}
+          <strong>CSS</strong> e <strong>WordPress</strong>, aplicando
+          <strong>metodologias ágeis (Scrum)</strong> e boas práticas de
+          arquitetura de software.
+        </TextStyled>
+
+        <TextStyled>
+          Atuo como{' '}
+          <strong>
+            referência técnica e líder de projeto front-end hands-on
+          </strong>{' '}
+          em iniciativas de grande escala no <strong>Sesc-DF</strong> e no
+          sistema
+          <strong> PesqBrasil</strong>, que atende{' '}
+          <strong>mais de 2 milhões de usuários cadastrados</strong>e registra
+          aproximadamente <strong>20 mil acessos diários</strong>. Tenho foco em{' '}
+          <strong>qualidade, performance e escalabilidade</strong>, além de
+          contribuir ativamente em{' '}
+          <strong>
+            mentoria técnica, revisão de código e integração entre equipes
+          </strong>
+          .
+        </TextStyled>
+
+        <TextStyled>
+          Sou movido por{' '}
+          <strong>
+            desafios, aprendizado contínuo e responsabilidade técnica
+          </strong>
+          , buscando constantemente evoluir como profissional e líder,
+          entregando soluções que geram{' '}
+          <strong>impacto real e valor para as pessoas</strong>.
         </TextStyled>
       </HeaderStyled>
       <SocialMedias>
